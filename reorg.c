@@ -54,7 +54,6 @@ int main(int argc, char *argv[]) {
 	int i,j,deletedTotal;
 	deletedTotal = 0;
 	for(i = 0; i < person_length/sizeof(Person); i++){
-		printf("Starts on new person %d out of %d\n", i, person_length/sizeof(Person));
 		Person* person = &person_map[i];
 		int x = person->knows_first + person->knows_n;
 		int deleted = 0;
